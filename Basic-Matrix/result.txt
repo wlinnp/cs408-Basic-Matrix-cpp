@@ -1,0 +1,81 @@
+left matrix
+1		2		3		4		5		
+2		2		2		2		2		
+3		1		1		1		3		
+0		0		2		3		-2		
+4		4		-4		0		0		
+
+right matrix
+1		0		0		0		0		
+1		2		1		2		1		
+0		0		1		0		0		
+1		1		1		1		1		
+2		2		-2		2		2		
+
+Addition
+2		2		3		4		5		
+3		4		3		4		3		
+3		1		2		1		3		
+1		1		3		4		-1		
+6		6		-6		2		2		
+
+Subtraction
+0		2		3		4		5		
+1		0		1		0		1		
+3		1		0		1		3		
+-1		-1		1		2		-3		
+2		2		-2		-2		-2		
+
+Product
+1		21		3		15		18		
+2		14		2		10		12		
+3		11		1		9		14		
+0		6		2		3		-2		
+4		8		-4		4		24		
+
+
+Performance Test
+for size: 1000
+Addition: 25646000.000000
+Subtraction: 25246000.000000
+Product: 6642123000.000000
+for size: 1100
+Addition: 29715000.000000
+Subtraction: 29695000.000000
+Product: 8717318000.000000
+for size: 1200
+Addition: 35346000.000000
+Subtraction: 35217000.000000
+Product: 11311058000.000000
+for size: 1300
+Addition: 41397000.000000
+Subtraction: 41550000.000000
+Product: 14419986000.000000
+for size: 1400
+Addition: 47930000.000000
+Subtraction: 47970000.000000
+Product: 18066469000.000000
+for size: 1500
+Addition: 54983000.000000
+Subtraction: 55202000.000000
+Product: 22099830000.000000
+for size: 1600
+Addition: 62566000.000000
+Subtraction: 62588000.000000
+Product: 26892640000.000000
+for size: 1700
+Addition: 72425000.000000
+Subtraction: 72286000.000000
+Product: 32692870000.000000
+for size: 1800
+Addition: 79471000.000000
+Subtraction: 78954000.000000
+Product: 38658972000.000000
+for size: 1900
+Addition: 87648000.000000
+Subtraction: 87895000.000000
+Product: 44954751000.000000
+for size: 2000
+Addition: 96977000.000000
+Subtraction: 97328000.000000
+Product: 52516298000.000000
