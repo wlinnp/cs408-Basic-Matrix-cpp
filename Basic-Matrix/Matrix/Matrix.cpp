@@ -5,7 +5,6 @@
  *      Author: william
  */
 
-#include <string>
 #include <sstream>
 #include <functional>
 #include "Matrix.h"
@@ -99,7 +98,7 @@ bool Matrix::isDimensionValid(const int i, const int j) const
 	return i > -1 && i < matrixSize && j > -1 && j < matrixSize;
 }
 
-void Matrix::setMatrixCelll(const int i, const int j, const double value)
+void Matrix::setMatrixCell(const int i, const int j, const double value)
 {
 	if (isDimensionValid(i, j))
 	{
@@ -114,11 +113,11 @@ std::string Matrix::str() const
 	{
 		for (int j = 0; j < matrixSize; ++j)
 		{
-			sout << matrix[i][j] << TAB;
+			sout << matrix[i][j] << utils.TAB;
 		}
-		sout << NEXT_LINE;
+		sout << utils.NEXT_LINE;
 	}
-	sout << NEXT_LINE;
+	sout << utils.NEXT_LINE;
 	return sout.str();
 }
 
@@ -143,7 +142,7 @@ Matrix Matrix::operate(const Matrix& right) const
 	Matrix result(matrixSize);
     for (int i = 0; i < matrixSize; i++) {
         for (int j = 0; j < matrixSize; j++) {
-             result.setMatrixCelll(i, j, o(matrix[i][j], right.getMatrix()[i][j]));
+             result.setMatrixCell(i, j, o(matrix[i][j], right.getMatrix()[i][j]));
         }
     }
 	return result;
@@ -162,7 +161,7 @@ Matrix Matrix::operator*(const Matrix& right) const
             for (int k = 0; k < matrixSize; k++) {
                 cellResult += matrix[i][k] * right.getMatrix()[j][k];
             }
-            result.setMatrixCelll(i, j, cellResult);
+            result.setMatrixCell(i, j, cellResult);
         }
     }
 	return result;

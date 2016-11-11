@@ -12,11 +12,14 @@
 
 #include <string>
 #include <iostream>
+#include "../Driver/Utils.h"
+
 class Matrix
 {
 private:
 	int matrixSize;
 	double** matrix;
+	Utils utils;
 	bool isDimensionValid(const int i, const int j) const;
 	void deAllocate();
 	void copyMatrix(double** input);
@@ -30,7 +33,7 @@ public:
 	~Matrix();
 	int getSize() const;
 	double** getMatrix() const;
-	void setMatrixCelll(const int i, const int j, const double value);
+	void setMatrixCell(const int i, const int j, const double value);
 	std::string str() const;
 	Matrix operator+(const Matrix& right) const;
 	Matrix operator-(const Matrix& right) const;
